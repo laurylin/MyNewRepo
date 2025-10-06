@@ -1,36 +1,40 @@
 footer {
-  background-color: lightblue;
-  font-family: Arial, sans-serif;
-  color: darkblue;
+  background-color: #ffd6ec; /* soft pink */
+  font-family: "Arial", sans-serif;
+  color: #9b0e64; /* dark rose text */
   padding: 10px;
-  border: 1px dashed darkblue;
+  border: 1px dashed #9b0e64;
+  text-align: center;
 }
 
 #notice {
   width: 80%;
-  margin: 0 auto; /* centers the element horizontally */
+  margin: 0 auto;
+  background-color: #fff0f7; 
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 6px rgba(255, 182, 193, 0.6);
 }
 
 .headline {
-  color: #8a2be2; /* you can change this to any color you like */
-  border-bottom: 2px dotted #8a2be2;
+  color: #c71585; 
+  border-bottom: 2px dotted #c71585;
   font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 4em;
-  background-color: rgba(173, 216, 230, 0.5); /* light blue, 50% transparent */
-  text-shadow: 2px 2px 5px gray; /* drop shadow */
-  padding: 10px;
+  background-color: rgba(255, 182, 193, 0.5); 
+  text-shadow: 3px 3px 6px #e75480; 
+  color: #a3075c;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 #section {
   font-family: Arial, sans-serif;
-  font-size: small;
-  color: red;
-  background-color: white;
-  width: 80%;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* drop shadow */
-  padding: 10px;
-}
+  font-size:
