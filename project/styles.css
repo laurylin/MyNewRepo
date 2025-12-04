@@ -109,6 +109,92 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* ===== Discover Nashville section ===== */
+.discover-section {
+  background-color: #fffaf3; /* soft warm background */
+  padding: 3rem 2rem;
+}
+
+.discover-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.discover-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.discover-intro {
+  font-size: 1rem;
+  max-width: 640px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Card grid */
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* On bigger screens, put them in 3 columns */
+@media (min-width: 800px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Individual cards */
+.discover-card {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 1.25rem 1.1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.discover-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* Text content */
+.discover-content h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.discover-content p {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Tag chip */
+.discover-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #ffe3d3;      /* soft orange to match CTA */
+  color: #b15527;
+}
+
 /* Booking */
 #booking {
   padding: 3rem 2rem;
@@ -163,6 +249,7 @@ footer {
   text-align: center;
   padding: 2rem;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
