@@ -228,7 +228,7 @@ nav a:hover {
   background-color: #e76b3c;
 }
 
-/* Blog */
+/* Blog list (on main site) */
 #blog {
   padding: 3rem 2rem;
 }
@@ -242,12 +242,55 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* Footer (DEFAULT for main pages only) */
 footer {
   background-color: #3e2f1c; /* Guitar Wood Brown */
   color: #fff;
   text-align: center;
   padding: 2rem;
+}
+
+/* ---------- Blog ARTICLE page styling ---------- */
+
+.blog-content {
+  max-width: 800px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.blog-content h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Blog FOOTER override (beats the default footer) ---------- */
+
+footer.blog-footer {
+  background-color: #1f2947 !important; /* Match site navy */
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer.blog-footer a {
+  color: #ff8c42;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer.blog-footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -288,49 +331,4 @@ footer {
     width: 100%;
     padding: 0 1rem;
   }
-}
-/* ---- Blog article styling ---- */
-
-.blog-content {
-  max-width: 800px;
-  margin: 2rem auto 4rem;
-  padding: 0 1.5rem;
-  line-height: 1.7;
-  font-size: 1rem;
-}
-
-.blog-content h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.blog-content ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.blog-content li {
-  margin-bottom: 0.4rem;
-}
-
-/* ---- Blog footer styling ---- */
-
-.blog-footer {
-  background-color: #1f2947;      /* navy to match header */
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-.blog-footer p {
-  margin: 0;
-}
-
-.blog-footer a {
-  color: #ff8c42;                 /* same orange as your buttons */
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.blog-footer a:hover {
-  text-decoration: underline;
 }
