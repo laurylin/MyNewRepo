@@ -149,4 +149,60 @@
 
           <!-- Peaceful Parks -->
           <article class="discover-card">
-            <d
+            <div class="discover-icon">🌿</div>
+            <div class="discover-content">
+              <h3>Peaceful Parks</h3>
+              <p>Quiet escapes inside the city—from scenic riverwalks to hidden botanical corners and picnic-ready lawns.</p>
+              <span class="discover-tag">City Escapes</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Stay Connected</h2>
+    <p>Follow us on Instagram, TikTok, and Facebook @MusicCityExplorer</p>
+    <p>Email: info@musiccityexplorer.com | Phone: (615) 555-1234</p>
+  </footer>
+
+  <!-- Success popup script -->
+  <div id="success-box" style="
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    text-align:center;
+    z-index:9999;">
+    <h2>Success!</h2>
+    <p>Your booking was submitted.</p>
+    <button onclick="document.getElementById('success-box').style.display='none'"
+      style="
+        padding:10px 20px;
+        border:none;
+        background:#ff8c42;
+        color:white;
+        border-radius:8px;
+        cursor:pointer;
+        font-weight:bold;">
+      OK
+    </button>
+  </div>
+
+  <script>
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("success-box").style.display = "block";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+
