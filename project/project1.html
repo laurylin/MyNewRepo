@@ -8,45 +8,47 @@
 </head>
 <body>
   <header>
-    <h1> Music City Explorer</h1>
+    <h1>Music City Explorer</h1>
     <nav>
       <ul>
         <li><a href="#tours">Tours</a></li>
         <li><a href="#booking">Book Now</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#discover">Discover</a></li> <!-- NEW UNIQUE TAB -->
+        <li><a href="#discover">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-<section id="hero"
-  style="
-    background-image: url('https://images.unsplash.com/photo-1523428096881-5bd79d043006?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 5rem 2rem;
-  ">
-  <h2>Discover Nashville Like Never Before</h2>
-  <p>Guided tours, local flavors, and unforgettable music history.</p>
-  <a href="#booking" class="cta-button">Book Your Adventure</a>
-</section>
+    <!-- Hero -->
+    <section
+      id="hero"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1523428096881-5bd79d043006?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 5rem 2rem;
+      "
+    >
+      <h2>Discover Nashville Like Never Before</h2>
+      <p>Guided tours, local flavors, and unforgettable music history.</p>
+      <a href="#booking" class="cta-button">Book Your Adventure</a>
+    </section>
 
-
+    <!-- Tours -->
     <section id="tours">
       <h2>Our Tours</h2>
       <div class="tour-list">
-
         <div class="tour-card">
           <img
             src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80"
             alt="Broadway Nashville Music Tour"
             loading="lazy"
           />
-          <h3> Music History Tour</h3>
+          <h3>Music History Tour</h3>
           <p>Walk through the roots of country, blues, and rock in iconic venues.</p>
           <a href="#booking" class="cta-button">Book Now</a>
         </div>
@@ -57,7 +59,7 @@
             alt="Southern Food Tasting"
             loading="lazy"
           />
-          <h3> Southern Food Tasting</h3>
+          <h3>Southern Food Tasting</h3>
           <p>Sample Nashville’s best BBQ, biscuits, and hot chicken.</p>
           <a href="#booking" class="cta-button">Book Now</a>
         </div>
@@ -68,75 +70,31 @@
             alt="Scenic Bike Ride"
             loading="lazy"
           />
-          <h3> Scenic Bike Ride</h3>
+          <h3>Scenic Bike Ride</h3>
           <p>Explore the city’s parks and riverfront with a local guide.</p>
           <a href="#booking" class="cta-button">Book Now</a>
         </div>
-
       </div>
     </section>
 
- <!-- Booking Section -->
-<section id="booking">
-  <h2>Book Your Tour</h2>
+    <!-- Booking Section -->
+    <section id="booking">
+      <h2>Book Your Tour</h2>
 
-  <form id="booking-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+      <form id="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="tour">Select Tour:</label>
-    <select id="tour" name="tour">
-      <option>Music History Tour</option>
-      <option>Southern Food Tasting</option>
-      <option>Scenic Bike Ride</option>
-    </select>
+        <label for="tour">Select Tour:</label>
+        <select id="tour" name="tour">
+          <option>Music History Tour</option>
+          <option>Southern Food Tasting</option>
+          <option>Scenic Bike Ride</option>
+        </select>
 
-    <label for="date">Preferred Date:</label>
-    <input type="date" id="date" name="date" required />
-
-    <button type="submit">Reserve Now</button>
-  </form>
-</section>
-
-<div id="success-box" style="
-  display:none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  background:white;
-  color:black;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.25);
-  text-align:center;
-  z-index:9999;">
-  
-  <h2>Success!</h2>
-  <p>Your booking was submitted.</p>
-  <button onclick="document.getElementById('success-box').style.display='none'"
-    style="
-      padding:10px 20px;
-      border:none;
-      background:#ff8c42;
-      color:white;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:bold;">
-    OK
-  </button>
-</div>
-
-<script>
-  document.getElementById("booking-form").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    document.getElementById("success-box").style.display = "block";
-    this.reset();
-  });
-</script>
         <label for="date">Preferred Date:</label>
         <input type="date" id="date" name="date" required />
 
@@ -144,11 +102,13 @@
       </form>
     </section>
 
+    <!-- Blog -->
     <section id="blog">
       <h2>Local Tips & Events</h2>
       <article>
         <h3>Top 5 Honky Tonks on Broadway</h3>
         <p>From legends to hidden gems, here’s where the music never stops.</p>
+        <!-- IMPORTANT: make sure this path matches your actual folder/file name -->
         <a href="blog/top-5-honky-tonks.html">Read More</a>
       </article>
       <article>
@@ -158,58 +118,35 @@
       </article>
     </section>
 
+    <!-- Discover -->
+    <section id="discover" class="discover-section">
+      <div class="discover-container">
+        <h2>Discover Nashville</h2>
+        <p class="discover-intro">
+          From hidden murals to rooftop bars with the best skyline views, explore the side of Nashville only locals know about.
+        </p>
 
-      <span class="discover-tag">Skyline Views</span>
-    </article>
-<section class="discover-section">
-  <div class="discover-container">
-    <h2>Discover Nashville</h2>
-    <p class="discover-intro">
-      From hidden murals to rooftop bars with the best skyline views, explore the side of Nashville only locals know about.
-    </p>
+        <div class="discover-grid">
+          <!-- Hidden Rooftops -->
+          <article class="discover-card">
+            <div class="discover-icon">🎲</div>
+            <div class="discover-content">
+              <h3>Hidden Rooftops</h3>
+              <p>Find the best skyline views and photo spots across the city—perfect for golden-hour photos and late-night hangs.</p>
+              <span class="discover-tag">Skyline Views</span>
+            </div>
+          </article>
 
-    <div class="discover-grid">
-      <!-- Hidden Rooftops -->
-      <article class="discover-card">
-        <div class="discover-icon">🎲</div>
-        <div class="discover-content">
-          <h3>Hidden Rooftops</h3>
-          <p>Find the best skyline views and photo spots across the city—perfect for golden-hour photos and late-night hangs.</p>
-          <span class="discover-tag">Skyline Views</span>
-        </div>
-      </article>
+          <!-- Secret Murals -->
+          <article class="discover-card">
+            <div class="discover-icon">🎨</div>
+            <div class="discover-content">
+              <h3>Secret Murals</h3>
+              <p>Discover Instagram-worthy street art tucked away in local neighborhoods far from the Broadway crowds.</p>
+              <span class="discover-tag">Street Art</span>
+            </div>
+          </article>
 
-      <!-- Secret Murals -->
-      <article class="discover-card">
-        <div class="discover-icon">🎨</div>
-        <div class="discover-content">
-          <h3>Secret Murals</h3>
-          <p>Discover Instagram-worthy street art tucked away in local neighborhoods far from the Broadway crowds.</p>
-          <span class="discover-tag">Street Art</span>
-        </div>
-      </article>
-
-      <!-- Peaceful Parks -->
-      <article class="discover-card">
-        <div class="discover-icon">🌿</div>
-        <div class="discover-content">
-          <h3>Peaceful Parks</h3>
-          <p>Quiet escapes inside the city—from scenic riverwalks to hidden botanical corners and picnic-ready lawns.</p>
-          <span class="discover-tag">City Escapes</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-  </main>
-
-  <footer id="contact">
-    <h2>Stay Connected</h2>
-    <p>Follow us on Instagram, TikTok, and Facebook @MusicCityExplorer</p>
-    <p>Email: info@musiccityexplorer.com | Phone: (615) 555-1234</p>
-  </footer>
-</body>
-</html>
-
+          <!-- Peaceful Parks -->
+          <article class="discover-card">
+            <d
