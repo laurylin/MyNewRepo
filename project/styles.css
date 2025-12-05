@@ -99,14 +99,38 @@ nav a:hover {
   text-align: left;
 }
 
+.tour-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+
+  display: flex;              /* NEW */
+  flex-direction: column;     /* NEW */
+}
+
 .tour-card img {
   width: 100%;
+  height: 190px;              /* NEW: keeps all images same height */
+  object-fit: cover;          /* NEW: crops nicely */
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 .tour-card h3 {
   margin-bottom: 0.5rem;
+}
+
+.tour-card p {
+  margin-bottom: 1rem;
+  flex-grow: 1;               /* NEW: pushes button to bottom */
+}
+
+.tour-card .cta-button {
+  align-self: flex-start;     /* keeps button left-aligned */
 }
 
 /* ===== Discover Nashville section ===== */
