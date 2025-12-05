@@ -289,3 +289,48 @@ footer {
     padding: 0 1rem;
   }
 }
+/* ---- Blog article styling ---- */
+
+.blog-content {
+  max-width: 800px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.blog-content h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Blog footer styling ---- */
+
+.blog-footer {
+  background-color: #1f2947;      /* navy to match header */
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.blog-footer p {
+  margin: 0;
+}
+
+.blog-footer a {
+  color: #ff8c42;                 /* same orange as your buttons */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
